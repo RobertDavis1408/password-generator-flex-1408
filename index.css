@@ -102,6 +102,11 @@ body {
            
 }
 
+#generateBtn:hover {
+    cursor: pointer;
+    color: burlywood;
+  }
+
 #options {          /*to center check boxes*/
     height: 42px;
     width: 215px;
@@ -284,6 +289,11 @@ input[type="range"]::-webkit-slider-thumb {
     text-align: center;
     color: #55F991;
     padding: 3.5px 0 ;
+}
+
+.pass-txt:hover {
+    cursor: pointer;
+    color: burlywood;
 }
 
 #containers {
