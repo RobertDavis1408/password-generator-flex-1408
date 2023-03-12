@@ -1,0 +1,50 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@400;500;800&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+            
+    </head>
+    <body>
+        
+        <div id="hero">
+            <h1 id="heading">Generate a<br><span id="heading-rnd-pass-txt">random password</h1>
+            <p id="sup-txt">Never use an insecure password again</p>
+            
+            <div class="btn-opts">
+                <button id="generateBtn">Generate passwords</button>
+                <div id="options">
+                    <div id="numbers-symbols">
+                        <label id="numbers-text"> <input type="checkbox" id="numbers" checked> Numbers</label>
+                        <label id="symbols-text"> <input type="checkbox" id="symbols" checked> Symbols</label>
+                    </div>  
+                    <div id="uppercase-lowercase">   
+                        <label id="uppercase-text"> <input type="checkbox" id="uppercase" checked> Uppercase</label>
+                        <label id="lowercase-text"> <input type="checkbox" id="lowercase" checked> Lowercase</label>
+                    </div>
+                </div>    
+            </div>
+            <div id="line"></div>           
+			<div id="slider">
+                <div id="slider-text"> 
+                    <label id="pass-length-text" for="password-length">Password Length:</label>
+                    <span id="password-length-value">8</span>
+                </div>
+                <input type="range" class="my-slider" id="password-length" min="4" max="16" value="8">
+            </div>
+            <div id="containers">
+                <div id="container-one">
+                    <div class="pass-txt"  id="cont-one-txt-el" onclick="copyPass(this)"></div>    
+                </div>
+                <div id="container-two">
+                    <div class="pass-txt" id="cont-two-txt-el" onclick="copyPass(this)"></div>
+                </div>
+            </div>
+                <h4 id="copy-to-click-text">(Click on password to copy)</h4>
+            <script src="index.js"></script>
+               
+        </div>    
+    </body> 
+</html>
